@@ -4,6 +4,10 @@
 	font-family: 'Josefin Sans', sans-serif;
 	box-sizing: border-box;
 }
+::-webkit-scrollbar {
+    display: none;
+}
+
 .keshav{
 	height: 100vh;
 	width: 100%;
@@ -32,6 +36,9 @@ nav{
 }
 span{
 	color: #f9004d;
+}
+#end{
+	color: #fff;
 }
 nav ul li{
 	list-style-type: none;
@@ -82,33 +89,6 @@ h4{
 	letter-spacing: 2px;
 	font-size: 20px;
 }
-.newslatter form{
-	width: 380px;
-	max-width: 100%;
-	position: relative;
-}
-.newslatter form input:first-child{
-	display: inline-block;
-	width: 100%;
-	padding: 14px 130px 14px 15px;
-	border: 2px solid #f9004d;
-	outline: none;
-	border-radius: 30px;
-}
-.newslatter form input:last-child{
-	position: absolute;
-	display: inline-block;
-	outline: none;
-	border: none;
-	padding: 10px 30px;
-	border-radius: 30px;
-	background-color:#f9004d;
-	color: white;
-	box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
-	top: 6px;
-	right: 6px; 
-}
-
 .about{
 	width: 100%;
 	padding: 100px 0px;
@@ -200,6 +180,22 @@ button:hover{
 	align-items: center;
 	min-height: 400px;
 }
+.box1{
+	background: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+.card1{
+	
+	margin-right: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
 .card{
 	height: 365px;
 	width: 335px;
@@ -207,10 +203,21 @@ button:hover{
 	background: #191919;
 	border-radius: 20px;
 	margin: 15px;
-	/* position: relative; */
 	overflow: hidden;
 	text-align: center;
 }
+.circle{
+	width: 50%;
+	height: 50%;
+}
+
+.circle img{
+	width: 100%;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
 .card i{
 	font-size: 50px;
 	display: block;
@@ -230,7 +237,7 @@ h5{
 	line-height: 27px;
 	margin-bottom: 25px;
 }
-.card .button{
+.button{
 	background-color:#1961cd;
 	color: white;
 	text-decoration: none;
@@ -240,19 +247,20 @@ h5{
 	border-radius: 30px;
 	transition: .4s; 
 }
-.card .button:hover{
+.button:hover{
 	background-color: transparent;
 	border: 2px solid #0025f9;
 	cursor: pointer;
 }
 .Skills{
-
+    
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: left;
 	min-height: 200px;
 	background: #000000;
-
+	width: 30%;
+	margin-left: 8%;
+    align-items: center;
 }
 
 .Skills p{
@@ -278,18 +286,17 @@ h5{
 	margin-bottom: 25px;
 }
 .contact-me .button-two{
-	background-color:#f9004d;
-	color: white;
+	color: rgb(3, 139, 157);
 	text-decoration: none;
 	border: 2px solid transparent;
 	font-weight: bold;
-	padding: 13px 30px;
+	
+	margin-bottom: 10px;
 	border-radius: 30px;
 	transition: .4s; 
 }
 .contact-me .button-two:hover{
 	background-color: transparent;
-	border: 2px solid #f9004d;
 	cursor: pointer;
 }
 footer{
@@ -324,12 +331,16 @@ footer p:nth-child(2){
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background:  #f9004d;
-	border-radius: 50%;
+	background: transparent(255, 255, 255);
+	border-radius: 20%;
 	margin: 22px 10px;
 	color: white;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 40px;
+}
+.social>a+a{
+	background: rgb(11,103,194);
+	font-size: 30px;
 }
 .social a:hover{
 	transform: scale(1.3);
@@ -338,6 +349,6 @@ footer p:nth-child(2){
 .end{
 	position: absolute;
 	color:#f9004d;
-	bottom: 35px;
-	font-size: 14px; 
+	bottom: 50px;
+	font-size: 24px; 
 }
