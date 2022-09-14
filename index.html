@@ -2,145 +2,109 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Krishna Keshav</title>
-	<link rel="icon" href="img/icon.png" type="image/x-icon" />
+	<link rel="icon" href="./img/icon.png" type="image/x-icon" />
 
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link
-		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-		rel="stylesheet">
-
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-		crossorigin="anonymous"/>
+	<meta name="description" content="Krishna Keshav Portfolio." />
+	<meta name="keywords" content="Java, Javascript, Html and Css" />
+	<link rel="stylesheet" href="./css/style.css" />
+	<script src="https://kit.fontawesome.com/69a6c41ebd.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-	<!----nav Section start---->
-	<nav>
-		<h2 class="logo">Portfo<span>lio</span></h2>
-		<ul>
-			<li><a href="#home">Home</a></li>
-			<li><a href="#about">About Me</a></li>
-			<li><a href="#projects">Projects</a></li>
-			<li><a href="#Skills">Skills</a></li>
-			<li><a href="#contact">Contact Me</a></li>
-		</ul>
-		
-	</nav>
-	<div class="keshav" id="home">
-		<div class="content">
-			<h4>Hello, my name is</h4>
-			<h1>Krishna <span>Keshav</span></h1>
-			<h3>I'am a Full Stack Web Developer.</h3>
 
-		</div>
-	</div>
+	<div class="row" id="nav"> </div>
 
-	<!----About section start---->
-	<section class="about" id="about">
-		<div class="main">
-			<img src="img/main-img.jpg">
-			<div class="about-text">
-				<h2>About Me</h2>
-				<h5>Web <span>Developer</span></h5>
-				<p>I am a full-stack web developer. I can make the website interactive with Css.
-				</p>
-				<a class="button" href="tel:+91 9304264670" data-rel="external">Let's Talk</a>
-			</div>
-		</div>
-	</section>
+	<header class="header" role="banner" id="top">
 
-	<!-----projects section start----------->
-	<div class="service" id="projects">
-		<div class="title">
-			<h2>Projects</h2>
-		</div>
+	</header>
 
-		<div class="box">
-			<div class="card">
-				<i class="fas fa-bars"></i>
-				<h5>Mytheresa</h5>
-				<div class="pra">
-					<p>I have cloned This website using Html,Css & JavScript in six Days.</p>
+	<main role="main">
 
-					<p style="text-align: center;">
-						<a class="button" href="https://resplendent-elf-e32d23.netlify.app/">View Live</a>
-					</p>
+		<section class="about" id="About"> </section>
+
+		<section class="client" id="Skills"> </section>
+
+		<section class="work" id="projects">
+			<div class="row">
+				<h2>My Projects</h2>
+
+				<div class="work__boxes">
+					<div class="project">
+						<div class="project__text">
+							<h3>Hindustan Times</h3>
+							<p>
+								Hindustan Times is an Indian English-language daily newspaper website. I have cloned
+								This website in five Days using.
+							</p>
+							<ul class="project__list">
+								<li>Javascript</li>
+								<li>Html</li>
+								<li>Css</li>
+							</ul>
+
+							<div class="project__links">
+								<a href="" class="link__text" title="Click">
+									Live ↗
+								</a>
+								<a href="https://github.com/KeshavCh0udhary/-messy-grape-1778" target="_blank">
+									<i class="fab fa-github" title="Source Code"></i>
+								</a>
+
+							</div>
+						</div>
+						<div class="project__image-box">
+							<img src="./img/ht.png" class="work__image" alt="Project 1" />
+						</div>
+					</div>
+
+					<div class="project">
+						<div class="project__text">
+							<h3>Mytheresa</h3>
+							<p>
+								Mytheresa is a German e-commerce website We have cloned in six days using-
+							</p>
+							<ul class="project__list">
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>JavaScript</li>
+							</ul>
+
+							<div class="project__links">
+								<a href="https://resplendent-elf-e32d23.netlify.app/" target="_blank" class="link__text"
+									title="Click">
+									Live ↗
+								</a>
+
+								<a href="https://github.com/Deepaksharma-39/1st_GroupProject-Masai" title="Source Code"
+									target="_blank">
+									<i class="fab fa-github" title="Source Code"></i>
+								</a>
+							</div>
+						</div>
+						<div class="project__image-box">
+							<img src="./img/Mytheresa.png" class="work__image" alt="Project 1" />
+						</div>
+					</div>
+
 				</div>
 			</div>
+		</section>
+	</main>
 
-			<div class="card">
-				<i class="far fa-user"></i>
-				<h5>Hindustan Times</h5>
-				<div class="pra">
-					<p>I have cloned This website using Html,Css & JavScript in five Days.</p>
+	<section class="contact" id="contact"> </section>
 
-					<p style="text-align: center;">
-						<a class="button" href="#">View Live</a>
-					</p>
-				</div>
-			</div>
+	<footer role="contentinfo" class="footer"> </footer>
 
-		</div>
-	</div>
-
-	<!------Skills section start ----->
-    
-	<div class="box1" id="Skills">
-		
-		<div class="Skills">
-
-			<p>My Skills <span id="text_change">Java</span></p>
-	
-		</div>
-
-		<div class="card1">
-			<div class ="circle">
-				<img src="img/main-img.jpg" alt="logo">
-			</div>
-
-			<div class="pra">
-				<p style="text-align: center;">
-					<a class="button" href="#">Download Resume</a>
-				</p>
-			</div>
-		</div>
-
-	</div>
-
-	
-
-	<!------Contact section start------>
-	<div class="contact-me" id="contact">
-		<p>My Contact</p>
-		<a class="button-two" href="tel:+91 9304264670" data-rel="external"><i class="fas fa-email"></i><span>+91</span> 9304264670</a>
-		<a class="button-two" href="mailto:krishna2000chy@gmail.com"><i class="fab fa-email"></i>krishna2000chy<span>@gmail.com</span></a>
-	</div>
-
-	<!------footer start--------->
-	<footer>
-
-		<p>Krishna <span>Keshav</span></p>
-		<p>More About</p>
-		<div class="social">
-			<a href="https://github.com/KeshavCh0udhary"><i class="fab fa-github"></i></a>
-			<a href="https://www.linkedin.com/in/krishna-keshav-baa164233/"><i class="fab fa-linkedin"></i></a>
-           
-		</div>
-
-		<p class="end">Thanks for visiting my Portfo<span id="end">lio</span></p>
-	</footer>
-
-	
+	<a href="#top" class="back-to-top" title="Back to Top">
+		<img src="./img/arrow-up.svg" alt="Back" class="back-to-top__image" />
+	</a>
 
 </body>
 
-<script src="/script/script.js"></script>
-
 </html>
+
+<script src="/script/script.js"></script>
