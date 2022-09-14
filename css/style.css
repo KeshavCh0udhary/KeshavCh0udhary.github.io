@@ -464,6 +464,8 @@ body:not(.user-is-tabbing) a:focus {
 	margin-bottom: 10px;
 	border-radius: 30px;
 	transition: .4s;
+	width: fit-content;
+	margin: auto;
 }
 
 .button-two:hover {
@@ -501,6 +503,7 @@ body:not(.user-is-tabbing) a:focus {
 	height: 100px;
 	align-items: center;
 	margin: auto;
+	gap: 20px;
 }
 
 .social a {
@@ -515,7 +518,7 @@ body:not(.user-is-tabbing) a:focus {
 	font-size: 40px;
 }
 
-.social>a+a {
+.social>a a {
 	background: rgb(11, 103, 194);
 }
 

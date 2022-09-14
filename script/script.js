@@ -61,7 +61,7 @@ const skills = () => {
 		<div>
 			<ul class="project__list">
 
-				<li><span>Java</span></li>
+				<li>Java</li>
 				<li>JavaScript</li>
 				<li>Data Structures & Algorithms</li>
 				<li>Html</li>
@@ -98,15 +98,16 @@ const footer = () => {
 	<h3>Krishna <span>Keshav</span></h3>
 
 	<div class="social">
-		<a href="https://github.com/KeshavCh0udhary" target="_blank"><i class="fab fa-github" title="GitHub"></i></a>
-		<a href="https://www.linkedin.com/in/krishna-keshav-baa164233/" target="_blank"><i class="fab fa-linkedin" title="LinkedIn"></i></a>
-
+		<a href="https://github.com/KeshavCh0udhary" target="_blank"><i class="fa-brands fa-github" title="GitHub"></i></a>
+		<a href="https://www.linkedin.com/in/krishna-keshav-baa164233/" target="_blank"><i class="fa-brands fa-linkedin" title="LinkedIn"></i></a>
+		<a href="https://twitter.com/Krishna__Keshav" target="_blank"><i <i class="fa-brands fa-square-twitter" title="Twitter"></i></a>
+		<a href="https://instagram.com/keshav_ch0udhary" target="_blank"><i <i class="fa-brands fa-square-instagram" title="Instagram"></i></a>
+        
 	</div>
 	</ul>
 	<a class="button-two" title="Phone" href="tel:+91 9304264670" data-rel="external"><i class="fa-duotone fa-phone"></i><span>+91</span> 9304264670</a>
 	<a class="button-two" title="Mail" href="mailto:krishna2000chy@gmail.com"><i class="fa-solid fa-envelope"></i><span>krishna2000chy</span>@gmail.com</a>
 </div>
-
 <p><span>Thanks for visiting my Portfolio</span></p>`
 
 }
