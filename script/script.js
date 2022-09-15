@@ -41,7 +41,7 @@ const about = () => {
 		<div class="about__text">
         <p>I am a full-stack web developer. I can make the website interactive with Css.
         </p>
-			<a href="./img/KrishnaKeshavResume.pdf" download="Krishna Keshav Resume" title="Download Resume" class="btn">My Resume</a>
+			<a href="./img/Krishna Keshav Resume.pdf" download="Krishna Keshav Resume" title="Download Resume" class="btn">My Resume</a>
 		</div>
 
 		<div class="about__photo-container">
