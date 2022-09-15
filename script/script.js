@@ -84,7 +84,7 @@ const skills = () => {
 const contact = () => {
 
     return `<div class="row">
-	<h2>Contect Me</h2>
+	<h2>Contact Me</h2>
 	<div class="contact__info">
 		<a href="mailto:krishna2000chy@gmail.com" class="btn">Mail</a>
 		<a class="btn" href="tel:+91 9304264670" data-rel="external">Phone</a>
