@@ -33,6 +33,12 @@
 	--gutter-small: 2rem;
 
 	--border-light: 1px solid rgb(36, 35, 35);
+
+	--Myslills-width: 100% !important;
+	--Myslills-height: 30vh;
+	--Myslills-elements-displayed: 5;
+	--Myslills-element-width: calc(var(--Myslills-width) / var(--Myslills-elements-displayed));
+	--Myslills-animation-duration: calc(var(--Myslills-elements) * 3s);
 }
 
 @font-face {
@@ -89,10 +95,7 @@ h3 {
 	line-height: var(--line-height-small);
 	color: var(--white);
 }
-
-span {
-	color: grey;
-}
+red
 
 .heading-primary {
 	line-height: 1;
@@ -271,21 +274,20 @@ body:not(.user-is-tabbing) a:focus {
 .back-to-top__image {
 	height: 70%;
 }
-
-#nav {
+.hero{
 	position: sticky;
 	top: 0;
-	z-index: 20px;
+	z-index: 100;
 	background-color: rgba(0, 0, 0, 0.6);
-	height: 100px;
 	max-width: 100%;
 }
+
 
 .nav {
 	display: flex;
 	justify-content: space-around;
 	padding: var(--gutter-normal) 0;
-
+height: 100px;
 }
 
 .nav .fa-sharp {
@@ -362,7 +364,7 @@ body:not(.user-is-tabbing) a:focus {
 	background-image: url(../img/background.webp);
 	background-size: cover;
 	background-position: center;
-	margin-top: -6%;
+	margin-top: -100px;
 }
 
 .header__text {
@@ -428,7 +430,6 @@ body:not(.user-is-tabbing) a:focus {
 
 .project__logos div+div {
 	width: 35%;
-
 	display: flex;
 	align-items: center;
 }
@@ -445,6 +446,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .about__photo {
 	width: 40rem;
+	border-radius: 15px;
 }
 
 .contact__info {
@@ -529,17 +531,136 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.Thechical li{
+	margin: 13px;
+	background-color: #eee;
+	border-radius: 8%;
+}
+
+.Myslills {
+  width: var(--Myslills-width);
+  height: var(--Myslills-height);
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+.Myslills:before, .Myslills:after {
+  position: absolute;
+  top: 0;
+  width: 10rem;
+  height: 100%;
+  content: "";
+  z-index: 1;
+}
+.Myslills:before {
+  left: 0;
+  background: linear-gradient(to right, #111 0%, transparent 100%);
+}
+.Myslills:after {
+  right: 0;
+  background: linear-gradient(to left, #111 0%, transparent 100%);
+}
+.Thechical {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  animation: scrolling var(--Myslills-animation-duration) linear infinite;
+}
+.Thechical:hover {
+  animation-play-state: paused;
+}
+.Thechical li:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  
+}
+@keyframes scrolling {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-1 * var(--Myslills-element-width) * var(--Myslills-elements))); }
+}
+.Thechical li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: var(--Myslills-element-width);
+  max-height: 100%;
+  font-size: calc(var(--Myslills-height)*3/4);
+  white-space: nowrap;
+}
+
+#Stack{
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+	margin: auto !important;
+	gap: 50px;
+	width: 100%;
+}
+.icn{
+	width:100px;
+	height:100px;
+}
+.stack{
+	width: fit-content;
+}
+
 /* ----MediaQuery -----*/
+
+@media (max-width: 600px) {
+  html { font-size: 12px; }
+  :root {
+    --Myslills-width: 120vw;
+    --Myslills-height: 20vh;
+    --Myslills-elements-displayed: 3;
+  }
+  .Myslills:before, .Myslills:after { width: 4rem; }
+
+  .Thechical li img{
+	width: 100%;
+  }
+  
+  #Stack{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	margin: auto !important;
+	gap: 20px;
+	}
+	.icn{
+		width:100px;
+		height:100px;
+	}
+	.stack{
+		width: fit-content;
+		color: #eee;
+		
+	}
+}
 
 @media only screen and (max-width: 300px) {
 	.nav {
 		font-size: var(--font-size-small);
+	}
+	.Thechical li img{
+		width: 50%;
 	}
 }
 
 @media only screen and (max-width: 400px) {
 	.nav__item:not(:last-child) {
 		margin-right: var(--gutter-normal);
+	}
+	html { font-size: 12px; }
+	:root {
+		--Myslills-width: 100vw;
+		--Myslills-height: 20vh;
+		--Myslills-elements-displayed: 3;
+	}
+	.Myslills:before, .Myslills:after { width: 4rem; }
+
+	.Thechical li img{
+		width: 50%;
 	}
 }
 
@@ -577,6 +698,13 @@ body:not(.user-is-tabbing) a:focus {
 		padding: var(--gutter-medium) 0;
 
 	}
+	.Thechical li img{
+		width: 40%;
+	}
+	:root {
+		--Myslills-width: 100vw;
+		--Myslills-height: 20vh;
+	}
     
 }
 
@@ -584,8 +712,34 @@ body:not(.user-is-tabbing) a:focus {
 	.row {
 		padding: 0 var(--gutter-normal);
 	}
+	html { font-size: 12px; }
+	:root {
+		--Myslills-width: 110vw;
+		--Myslills-height: 25vh;
+		--Myslills-elements-displayed: 3;
+	}
+	.Myslills:before, .Myslills:after { width: 4rem; }
+
+	.Thechical{
+		height: fit-content;
+		width: 50vh;
+	}
+
+	.Thechical li img{
+		width: 50%;
+	}
+
+	#Stack{
+		grid-template-columns: repeat(2,3fr);
+		gap: 20px;
+	}
+	.icn{
+		width:50px;
+		height:60px;
+	}
 
 }
+
 
 @media only screen and (max-width: 750px) {
 
@@ -625,6 +779,28 @@ body:not(.user-is-tabbing) a:focus {
 	.row {
 		max-width: 100%;
 	}
+	html { font-size: 12px; }
+	:root {
+		--Myslills-width: 120vw;
+		--Myslills-height: 30vh;
+		--Myslills-elements-displayed: 4;
+	}
+	.Myslills:before, .Myslills:after { width: 4rem; }
+
+	.Thechical li img{
+		width: 50%;
+	}
+	.hero{
+		height: 100px;
+	}
+	#Stack{
+		grid-template-columns: repeat(3,3fr);
+		gap: 20px;
+	}
+	.icn{
+		width:50px;
+		height:80px;
+	}
 
 }
 
@@ -654,16 +830,29 @@ body:not(.user-is-tabbing) a:focus {
 		flex-direction: column-reverse;
 		align-items: initial;
 	}
+
+	html { font-size: 12px; }
+	:root {
+		--Myslills-width: 130vw;
+		--Myslills-height: 30vh;
+		--Myslills-elements-displayed: 4;
+	}
+	.Myslills:before, .Myslills:after { width: 4rem; }
+	
+	.Thechical li img{
+		width: 50%;
+	}
+
 }
 
 @media only screen and (min-width: 901px) {
 	.project__image-box {
 		flex: 1;
-		margin: 0 0 0 10rem;
+		margin: 1 2 4 10rem;
 	}
 
 	.about__text {
-		flex: 0 0 35%;
+		flex: 0 0 40%;
 	}
 
 	.about__photo-container {
@@ -699,4 +888,14 @@ body:not(.user-is-tabbing) a:focus {
 	.row {
 		max-width: 1100px;
 	}
+
+	.Myslills:before, .Myslills:after { width: 4rem; }
+	
+	.Thechical li img{
+		width: 50%;
+	}
+}
+
+span {
+	color: grey;
 }
