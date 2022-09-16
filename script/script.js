@@ -1,5 +1,6 @@
 const Nav = () => {
 	return `<nav class="nav" role="navigation">
+	  
 	<h3 class="logo" id="change">Portfo<span>lio</span></h3>
 	<ul class="nav__items" id="SideBar">
 		<li class="nav__item">
@@ -17,6 +18,7 @@ const Nav = () => {
 		<li class="nav__item">
 			<a href="#contact" class="nav__link">Contact</a>
 		</li>
+
         <i class="fa-sharp fa-solid fa-xmark" onclick="closeMenu()"></i>
 	</ul>
     <i class="fa-solid fa-bars" onclick="openMenu()"></i>
@@ -298,6 +300,7 @@ window.addEventListener("scroll", () => {
 	}
 
 });
+
 
 var frm = document.querySelector("#contact");
 frm.addEventListener("submit", (e) => {

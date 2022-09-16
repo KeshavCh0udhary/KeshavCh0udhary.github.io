@@ -623,6 +623,17 @@ body:not(.user-is-tabbing) a:focus {
 	width: fit-content;
 }
 
+#Github{
+	overflow: scroll;
+	color: var(--lightblue);
+	max-width: var(--container-max-width);
+	
+}
+
+.TechStack+.row{
+	max-height: 100px;
+}
+
 /* ----MediaQuery -----*/
 
 @media (max-width: 600px) {
@@ -962,3 +973,16 @@ body:not(.user-is-tabbing) a:focus {
 span {
 	color: grey;
 }
+
+span.text-muted{
+	color: white;
+}
+
+span.contrib-number{
+	color: var(--lightblue);
+}
+
+.position-relative{
+	overflow: scroll;
+}
+
