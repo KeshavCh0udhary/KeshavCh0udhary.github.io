@@ -93,7 +93,7 @@ const Project = () => {
 
 		<div class="project__links">
 			<a href="https://eloquent-melomakarona-13c3e8.netlify.app/" class="link__text"
-				title="Click">
+			target="_blank" title="Click">
 				Live ↗
 			</a>
 			<a href="https://github.com/KeshavCh0udhary/-messy-grape-1778" target="_blank">
