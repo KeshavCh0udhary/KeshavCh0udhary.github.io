@@ -242,17 +242,6 @@ window.addEventListener('scroll', () => {
 
 });
 
-let Src = [
-	"./img/Java-PNG-Clipart.png",
-	"./img/js-logo.png",
-	"./img/spring.png",
-	"./img/hibernate.png",
-	"./img/mysql.png",
-	"./img/dsa.webp",
-	"./img/HTML5_Logo_512.png",
-	"./img/css-3-logo-png-transparent.png",
-	"./img/git.png",
-];
 
 const root = document.documentElement;
 const Elements = getComputedStyle(root).getPropertyValue("--Myslills-elements-displayed");
@@ -264,11 +253,29 @@ for (let i = 0; i < Elements; i++) {
 	MySkills.appendChild(MySkills.children[i].cloneNode(true));
 }
 
+const Href = () => {
+	let Src = [
+		"./img/Java-PNG-Clipart.png",
+		"./img/js-logo.png",
+		"./img/spring.png",
+		"./img/hibernate.png",
+		"./img/mysql.png",
+		"./img/dsa.webp",
+		"./img/HTML5_Logo_512.png",
+		"./img/css-3-logo-png-transparent.png",
+		"./img/git.png",
+	];
+	return Src;
+};
+
 const TechStack = () => {
 	let skills = ["Java", "Mysql", "Spring boot", "JavaScript", "DSA", "Hibernate", "HTML", "CSS", "Git",]
 	return skills;
 }
 const len = TechStack();
+
+const Src = Href();
+
 let y = document.createElement("h3");
 let x = document.getElementById("Stack");
 for (let i = 0; i < len.length; i++) {
