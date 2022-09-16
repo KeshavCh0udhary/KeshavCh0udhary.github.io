@@ -75,6 +75,69 @@ const skills = () => {
 
 }
 
+const Project = () => {
+	return `<div class="project">
+	<div class="project__text">
+		<h3>Hindustan Times</h3>
+		<p>
+			Hindustan Times is an Indian English-language daily newspaper website. I have cloned
+			This website in five Days.
+		</p>
+		<h4><span>Tech Stack</span></h4>
+		<ul class="project__list">
+			<li>Javascript</li>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>APIs</li>
+		</ul>
+
+		<div class="project__links">
+			<a href="https://eloquent-melomakarona-13c3e8.netlify.app/" class="link__text"
+				title="Click">
+				Live ↗
+			</a>
+			<a href="https://github.com/KeshavCh0udhary/-messy-grape-1778" target="_blank">
+				<i class="fab fa-github" title="Source Code"></i>
+			</a>
+
+		</div>
+	</div>
+	<div class="project__image-box">
+		<img src="./img/ht.png" class="work__image" alt="Project 1" />
+	</div>
+</div>
+
+<div class="project">
+	<div class="project__text">
+		<h3>Mytheresa</h3>
+		<p>
+			Mytheresa is a German e-commerce website We have cloned in six days.
+		</p>
+		<h4><span>Tech Stack</span></h4>
+		<ul class="project__list">
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JavaScript</li>
+		</ul>
+		<div class="project__links">
+			<a href="https://resplendent-elf-e32d23.netlify.app/" target="_blank" class="link__text"
+				title="Click">
+				Live ↗
+			</a>
+
+			<a href="https://github.com/Deepaksharma-39/1st_GroupProject-Masai" title="Source Code"
+				target="_blank">
+				<i class="fab fa-github" title="Source Code"></i>
+			</a>
+		</div>
+	</div>
+	<div class="project__image-box">
+		<img src="./img/Mytheresa.png" class="work__image" alt="Project 1" />
+	</div>
+</div>
+`
+}
+
 const contact = () => {
 
 	return `<div class="row" id="address">
@@ -129,6 +192,8 @@ document.querySelector("#contact").innerHTML = contact();
 document.querySelector(".footer").innerHTML = footer();
 
 document.querySelector(".TechStack").innerHTML = stack();
+
+document.querySelector(".work__boxes").innerHTML = Project();
 
 let sidemenu = document.getElementById("SideBar");
 
@@ -206,8 +271,8 @@ const TechStack = () => {
 const len = TechStack();
 let y = document.createElement("h3");
 let x = document.getElementById("Stack");
-for(let i=0; i<len.length; i++) {
-	x.innerHTML +=`<h3 class="stack"><span><img class="icn"src=${Src[i]} alt=""></span></h3>`
+for (let i = 0; i < len.length; i++) {
+	x.innerHTML += `<h3 class="stack"><span><img class="icn"src=${Src[i]} alt=""></span></h3>`
 }
 
 

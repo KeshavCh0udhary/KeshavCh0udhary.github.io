@@ -95,9 +95,8 @@ h3 {
 	line-height: var(--line-height-small);
 	color: var(--white);
 }
-red
 
-.heading-primary {
+red .heading-primary {
 	line-height: 1;
 	font-size: var(--font-size-huge);
 	font-weight: 400;
@@ -274,7 +273,8 @@ body:not(.user-is-tabbing) a:focus {
 .back-to-top__image {
 	height: 70%;
 }
-.hero{
+
+.hero {
 	position: sticky;
 	top: 0;
 	z-index: 100;
@@ -287,7 +287,7 @@ body:not(.user-is-tabbing) a:focus {
 	display: flex;
 	justify-content: space-around;
 	padding: var(--gutter-normal) 0;
-height: 100px;
+	height: 100px;
 }
 
 .nav .fa-sharp {
@@ -298,22 +298,23 @@ height: 100px;
 	display: none;
 }
 
-.fa-solid{
+.fa-solid {
 	font-size: 25px;
 	margin-left: 15px;
 	margin-right: 2px;
 }
-.fa-duotone{
+
+.fa-duotone {
 	font-size: 25px;
 }
 
-.fab{
+.fab {
 	font-size: 30px;
 	padding: 13px;
 	transition: all 0.3s;
 }
 
-.fab:hover{
+.fab:hover {
 	transform: scale(1.6);
 }
 
@@ -381,16 +382,16 @@ height: 100px;
 	font-size: var(--font-size-medium);
 }
 
-.row{
+.row {
 	display: grid;
-	grid-template-columns: repeat(1,1fr);
-	
+	grid-template-columns: repeat(1, 1fr);
+
 }
 
 .project {
 	display: flex;
 	align-items: center;
-	
+
 }
 
 .project__links {
@@ -527,114 +528,139 @@ height: 100px;
 .social a:hover {
 	transform: scale(1.3);
 	transition: .3s;
-	
+
 }
 
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-.Thechical li{
+.Thechical li {
 	margin: 13px;
 	background-color: #eee;
 	border-radius: 8%;
 }
 
 .Myslills {
-  width: var(--Myslills-width);
-  height: var(--Myslills-height);
-  overflow: hidden;
-  position: relative;
-  margin: auto;
-}
-.Myslills:before, .Myslills:after {
-  position: absolute;
-  top: 0;
-  width: 10rem;
-  height: 100%;
-  content: "";
-  z-index: 1;
-}
-.Myslills:before {
-  left: 0;
-  background: linear-gradient(to right, #111 0%, transparent 100%);
-}
-.Myslills:after {
-  right: 0;
-  background: linear-gradient(to left, #111 0%, transparent 100%);
-}
-.Thechical {
-  list-style: none;
-  height: 100%;
-  display: flex;
-  animation: scrolling var(--Myslills-animation-duration) linear infinite;
-}
-.Thechical:hover {
-  animation-play-state: paused;
-}
-.Thechical li:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
-  
-}
-@keyframes scrolling {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-1 * var(--Myslills-element-width) * var(--Myslills-elements))); }
-}
-.Thechical li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  width: var(--Myslills-element-width);
-  max-height: 100%;
-  font-size: calc(var(--Myslills-height)*3/4);
-  white-space: nowrap;
+	width: var(--Myslills-width);
+	height: var(--Myslills-height);
+	overflow: hidden;
+	position: relative;
+	margin: auto;
 }
 
-#Stack{
+.Myslills:before,
+.Myslills:after {
+	position: absolute;
+	top: 0;
+	width: 10rem;
+	height: 100%;
+	content: "";
+	z-index: 1;
+}
+
+.Myslills:before {
+	left: 0;
+	background: linear-gradient(to right, #111 0%, transparent 100%);
+}
+
+.Myslills:after {
+	right: 0;
+	background: linear-gradient(to left, #111 0%, transparent 100%);
+}
+
+.Thechical {
+	list-style: none;
+	height: 100%;
+	display: flex;
+	animation: scrolling var(--Myslills-animation-duration) linear infinite;
+}
+
+.Thechical:hover {
+	animation-play-state: paused;
+}
+
+.Thechical li:hover {
+	transform: scale(1.1);
+	transition: 0.5s;
+
+}
+
+@keyframes scrolling {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(calc(-1 * var(--Myslills-element-width) * var(--Myslills-elements)));
+	}
+}
+
+.Thechical li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	width: var(--Myslills-element-width);
+	max-height: 100%;
+	font-size: calc(var(--Myslills-height)*3/4);
+	white-space: nowrap;
+}
+
+#Stack {
 	display: grid;
-	grid-template-columns: repeat(5,1fr);
+	grid-template-columns: repeat(5, 1fr);
 	margin: auto !important;
 	gap: 50px;
 	width: 100%;
 }
-.icn{
-	width:100px;
-	height:100px;
+
+.icn {
+	width: 100px;
+	height: 100px;
 }
-.stack{
+
+.stack {
 	width: fit-content;
 }
 
 /* ----MediaQuery -----*/
 
 @media (max-width: 600px) {
-  html { font-size: 12px; }
-  :root {
-    --Myslills-width: 120vw;
-    --Myslills-height: 20vh;
-    --Myslills-elements-displayed: 3;
-  }
-  .Myslills:before, .Myslills:after { width: 4rem; }
+	html {
+		font-size: 12px;
+	}
 
-  .Thechical li img{
-	width: 100%;
-  }
-  
-  #Stack{
-	display: grid;
-	grid-template-columns: repeat(2,1fr);
-	margin: auto !important;
-	gap: 20px;
+	:root {
+		--Myslills-width: 120vw;
+		--Myslills-height: 20vh;
+		--Myslills-elements-displayed: 3;
 	}
-	.icn{
-		width:100px;
-		height:100px;
+
+	.Myslills:before,
+	.Myslills:after {
+		width: 4rem;
 	}
-	.stack{
+
+	.Thechical li img {
+		width: 100%;
+	}
+
+	#Stack {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		margin: auto !important;
+		gap: 20px;
+	}
+
+	.icn {
+		width: 100px;
+		height: 100px;
+	}
+
+	.stack {
 		width: fit-content;
 		color: #eee;
-		
+
 	}
 }
 
@@ -642,7 +668,8 @@ height: 100px;
 	.nav {
 		font-size: var(--font-size-small);
 	}
-	.Thechical li img{
+
+	.Thechical li img {
 		width: 50%;
 	}
 }
@@ -651,24 +678,33 @@ height: 100px;
 	.nav__item:not(:last-child) {
 		margin-right: var(--gutter-normal);
 	}
-	html { font-size: 12px; }
+
+	html {
+		font-size: 12px;
+	}
+
 	:root {
 		--Myslills-width: 100vw;
 		--Myslills-height: 20vh;
 		--Myslills-elements-displayed: 3;
 	}
-	.Myslills:before, .Myslills:after { width: 4rem; }
 
-	.Thechical li img{
+	.Myslills:before,
+	.Myslills:after {
+		width: 4rem;
+	}
+
+	.Thechical li img {
 		width: 50%;
 	}
 }
 
 @media only screen and (max-width: 500px) {
 
-	.project__logos div:last-child{
+	.project__logos div:last-child {
 		display: none;
 	}
+
 	.heading-primary {
 		font-size: var(--font-size-large);
 		min-width: 100%;
@@ -698,44 +734,55 @@ height: 100px;
 		padding: var(--gutter-medium) 0;
 
 	}
-	.Thechical li img{
+
+	.Thechical li img {
 		width: 40%;
 	}
+
 	:root {
 		--Myslills-width: 100vw;
 		--Myslills-height: 20vh;
 	}
-    
+
 }
 
 @media only screen and (max-width: 600px) {
 	.row {
 		padding: 0 var(--gutter-normal);
 	}
-	html { font-size: 12px; }
+
+	html {
+		font-size: 12px;
+	}
+
 	:root {
 		--Myslills-width: 110vw;
 		--Myslills-height: 25vh;
 		--Myslills-elements-displayed: 3;
 	}
-	.Myslills:before, .Myslills:after { width: 4rem; }
 
-	.Thechical{
+	.Myslills:before,
+	.Myslills:after {
+		width: 4rem;
+	}
+
+	.Thechical {
 		height: fit-content;
 		width: 50vh;
 	}
 
-	.Thechical li img{
+	.Thechical li img {
 		width: 50%;
 	}
 
-	#Stack{
-		grid-template-columns: repeat(2,3fr);
+	#Stack {
+		grid-template-columns: repeat(2, 3fr);
 		gap: 20px;
 	}
-	.icn{
-		width:50px;
-		height:60px;
+
+	.icn {
+		width: 60px;
+		height: 60px;
 	}
 
 }
@@ -743,7 +790,7 @@ height: 100px;
 
 @media only screen and (max-width: 750px) {
 
-	.nav{
+	.nav {
 		justify-content: space-between;
 		height: 100%;
 	}
@@ -779,27 +826,33 @@ height: 100px;
 	.row {
 		max-width: 100%;
 	}
-	html { font-size: 12px; }
+
+	html {
+		font-size: 12px;
+	}
+
 	:root {
 		--Myslills-width: 120vw;
 		--Myslills-height: 30vh;
 		--Myslills-elements-displayed: 4;
 	}
-	.Myslills:before, .Myslills:after { width: 4rem; }
 
-	.Thechical li img{
+	.Myslills:before,
+	.Myslills:after {
+		width: 4rem;
+	}
+
+	.Thechical li img {
 		width: 50%;
 	}
-	.hero{
+
+	.hero {
 		height: 100px;
 	}
-	#Stack{
-		grid-template-columns: repeat(3,3fr);
+
+	#Stack {
+		grid-template-columns: repeat(3, 3fr);
 		gap: 20px;
-	}
-	.icn{
-		width:50px;
-		height:80px;
 	}
 
 }
@@ -831,15 +884,22 @@ height: 100px;
 		align-items: initial;
 	}
 
-	html { font-size: 12px; }
+	html {
+		font-size: 12px;
+	}
+
 	:root {
 		--Myslills-width: 130vw;
 		--Myslills-height: 30vh;
 		--Myslills-elements-displayed: 4;
 	}
-	.Myslills:before, .Myslills:after { width: 4rem; }
-	
-	.Thechical li img{
+
+	.Myslills:before,
+	.Myslills:after {
+		width: 4rem;
+	}
+
+	.Thechical li img {
 		width: 50%;
 	}
 
@@ -889,9 +949,12 @@ height: 100px;
 		max-width: 1100px;
 	}
 
-	.Myslills:before, .Myslills:after { width: 4rem; }
-	
-	.Thechical li img{
+	.Myslills:before,
+	.Myslills:after {
+		width: 4rem;
+	}
+
+	.Thechical li img {
 		width: 50%;
 	}
 }
