@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="./css/style.css" />
 	<script src="https://kit.fontawesome.com/69a6c41ebd.js" crossorigin="anonymous"></script>
 
-	<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
 
 </head>
 
@@ -22,7 +22,7 @@
 		<div class="row" id="nav"> </div>
 
 	</div>
-	
+
 	<header class="header" role="banner" id="top"> </header>
 
 	<main role="main">
@@ -35,7 +35,7 @@
 			<div class="row">
 				<h2>My Projects</h2>
 				<div class="work__boxes">
-					
+
 				</div>
 			</div>
 		</section>
@@ -45,25 +45,28 @@
 	<section class="contact" id="contact"> </section>
 
 	<section class="TechStack"> </section>
-	
+
 	<section class="contribution" id="Git"> </section>
 
-	<section class="contact">
-	
+	<section class="Statistics">
+
 		<div class="row">
 			<h2>Statistics</h2>
 
-			<div class="work__boxes"> </div>
-
 		</div>
-		
+
 	</section>
 
-	<footer role="contentinfo" class="footer"> </footer>
+	<footer role="contentinfo" class="footer">
 
-	<a href="#top" class="back-to-top" title="Back to Top"><img src="./img/arrow-up.svg" alt="Back" class="back-to-top__image" /></a>
+	</footer>
 
-	<p style="text-align: center"> <span>Thanks for visiting my Portfolio</span></p>
+
+
+	<a href="#top" class="back-to-top" title="Back to Top"><img src="./img/arrow-up.svg" alt="Back"
+			class="back-to-top__image" /></a>
+
+	<p style="text-align: center; margin: auto;"> <span>Thanks for visiting my Portfolio</span></p>
 
 </body>
 
@@ -74,12 +77,12 @@
 
 <script>
 
-GitHubCalendar(".calendar", "KeshavCh0udhary");
-GitHubCalendar(".calendar", "KeshavCh0udhary", { responsive: true });
-    GitHubCalendar("KeshavCh0udhary", "KeshavCh0udhary", {
-       proxy (username) {
-         return fetch(`https://your-proxy.com/github?user=${username}`);
-       }
-}).then(r => r.text());
+	GitHubCalendar(".calendar", "KeshavCh0udhary");
+	GitHubCalendar(".calendar", "KeshavCh0udhary", { responsive: true });
+	GitHubCalendar("KeshavCh0udhary", "KeshavCh0udhary", {
+		proxy(username) {
+			return fetch(`https://your-proxy.com/github?user=${username}`);
+		}
+	}).then(r => r.text());
 
 </script>

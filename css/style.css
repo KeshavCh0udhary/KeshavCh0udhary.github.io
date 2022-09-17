@@ -450,10 +450,6 @@ body:not(.user-is-tabbing) a:focus {
 	border-radius: 15px;
 }
 
-.contact__info {
-	max-width: var(--container-medium-width);
-}
-
 .footer {
 	text-align: center;
 	padding: var(--gutter-medium) 0 var(--gutter-normal);
@@ -623,10 +619,85 @@ body:not(.user-is-tabbing) a:focus {
 	width: fit-content;
 }
 
-
-
-.TechStack+.row{
+.TechStack+.row {
 	max-height: 100px;
+}
+
+
+span {
+	color: grey;
+}
+
+span.text-muted {
+	color: white;
+}
+
+span.contrib-number {
+	color: var(--lightblue);
+}
+
+.row .calendar {
+	width: 100%;
+}
+
+#address {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 2vw 4vw;
+	width: 90%;
+	max-width: 600px;
+	border-radius: 10px;
+	margin-top: 10px;
+	color: white;
+	margin: auto;
+	font-size: 25px;
+}
+
+form input {
+	height: 35px;
+	background-color: black;
+	border-radius: 5px;
+	border: 1px solid var(--lightblue);
+	color: white;
+	font-size: 20px;
+}
+
+form input:focus {
+	outline: none;
+}
+
+form textarea {
+	background-color: black;
+	border: 1px solid var(--lightblue);
+	border-radius: 10px;
+	color: white;
+	font-size: 20px;
+}
+
+form textarea:focus {
+	outline: none;
+}
+
+form #btn {
+	background-color: transparent;
+	cursor: pointer;
+	font-weight: 400;
+	height: 50px;
+	border-radius: 8px;
+	background-color: transparent;
+	border: 1px solid var(--lightblue);
+	color: white;
+}
+
+.SendMessage h4 {
+	text-align: center;
 }
 
 /* ----MediaQuery -----*/
@@ -793,7 +864,7 @@ body:not(.user-is-tabbing) a:focus {
 
 	.row .calendar>div+div {
 		margin: auto;
-	    display: flex;
+		display: flex;
 		flex-direction: column;
 		width: 100%;
 		font-size: larger;
@@ -844,17 +915,18 @@ body:not(.user-is-tabbing) a:focus {
 	.row .calendar>div+div {
 		font-size: larger;
 	}
-    
 
-	.row .calendar>div>div{
+
+	.row .calendar>div>div {
 		font-size: 15px
 	}
 
-	span.text-muted{
-        font-size: 12px;
+	span.text-muted {
+		font-size: 12px;
 		color: #4aafda;
 	}
-	span.contrib-number{
+
+	span.contrib-number {
 		color: var(--lightblue);
 		font-size: 15px;
 	}
@@ -880,6 +952,12 @@ body:not(.user-is-tabbing) a:focus {
 
 	#Stack {
 		grid-template-columns: repeat(3, 3fr);
+		gap: 20px;
+	}
+
+	.row #address {
+		display: flex;
+		flex-direction: column;
 		gap: 20px;
 	}
 
@@ -985,22 +1063,4 @@ body:not(.user-is-tabbing) a:focus {
 	.Thechical li img {
 		width: 50%;
 	}
-}
-
-span {
-	color: grey;
-}
-
-span.text-muted{
-	color: white;
-}
-
-span.contrib-number{
-	color: var(--lightblue);
-}
-
-
-.row .calendar {
-	width: 100%;
-	
 }

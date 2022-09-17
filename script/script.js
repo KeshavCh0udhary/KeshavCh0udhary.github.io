@@ -147,14 +147,34 @@ const Project = () => {
 
 const contact = () => {
 
-	return `<div class="row" id="address">
+	return `<div class="row" >
 	
-	<div class="contact__info">
-	    <h2>Contact Me</h2>
-		<a href="mailto:krishna2000chy@gmail.com" class="btn">Mail</a>
-		<a class="btn" href="tel:+91 9304264670" data-rel="external">Phone</a>
+	<div id="address">
+
+		<div>
+			<h2>Contact Me</h2>
+			<a href="mailto:krishna2000chy@gmail.com" class="btn">Mail</a>
+			<a class="btn" href="tel:+91 9304264670" data-rel="external">Phone</a>
+			
+		</div> 
+
+	    <div class="SendMessage">
+       
+	        <h4>Leave Message</h4>
+	  
+			<form name="Send_Message_To_Keshav">
+				<input type="text" name="Name" placeholder="Your Name" required>
+				<input type="text" name="Email" placeholder="Email" required>
+				<input type="number" name="Phone" placeholder="Phone Number" required>
+				<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+				<button id="btn" type="submit">Send message</button>
+		    </form>
+		    <span id="message"></span>
+	     </div> 
+
 	</div> 
-	</div>`
+
+</div>`
 
 }
 
@@ -321,13 +341,39 @@ window.addEventListener("scroll", () => {
 });
 
 
-var frm = document.querySelector("#contact");
-frm.addEventListener("submit", (e) => {
-	e.preventDefault();
-	let name = document.getElementById("name").value;
-	let messege = document.getElementById("messege").value;
-	var win = window.open(
-		`https://wa.me/+919304264670?text=Hi%20I%27m%20${name},%20${messege}`,
-		"_blank"
-	);
-});
+const scriptURL = "https://script.google.com/macros/s/AKfycbysPMFg84Mj5juI-RtURRWnCDLeRdWHBKMGUWogm_gh0WfMOO6HCELIBSJKKAzHf7Nt-A/exec"
+
+const form = document.forms["Send_Message_To_Keshav"]
+
+const msg = document.getElementById("message");
+form.addEventListener("submit", e => {
+	e.preventDefault()
+	let buttoncolor = document.getElementById("btn");
+
+	msg.style.color ="pink";
+
+	buttoncolor.style.backgroundColor = "lightblue";
+	fetch(scriptURL, { method: "POST", body: new FormData(form) })
+		.then(response => {
+			msg.innerHTML = "Message sent Successfully!"
+
+			setTimeout(() => {
+				msg.innerHTML = "";
+			}, 3000);
+
+			form.reset();
+			buttoncolor.style.backgroundColor = "transparent";
+		})
+		.catch(error => {
+
+			msg.innerHTML = "Some Error Occurs Please try again"
+
+			setTimeout(() => {
+				msg.innerHTML = "";
+			}, 3000);
+
+			form.reset();
+			buttoncolor.style.backgroundColor = "transparent";
+		})
+})
+
