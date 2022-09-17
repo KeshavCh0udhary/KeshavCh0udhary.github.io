@@ -19,6 +19,11 @@ const Nav = () => {
 			<a href="#contact" class="nav__link">Contact</a>
 		</li>
 
+		<li class="nav__item">
+			<a href="#Git" class="nav__link">Contribution</a>
+		</li>
+		
+
         <i class="fa-sharp fa-solid fa-xmark" onclick="closeMenu()"></i>
 	</ul>
     <i class="fa-solid fa-bars" onclick="openMenu()"></i>
@@ -181,6 +186,18 @@ const stack = () => {
            </div>`;
 
 }
+
+const contributions = () => {
+
+	return `<div class="row" >
+				<h2>My Contribution</h2>
+				<div class="calendar" id="Github">
+					Loading the data just for you.
+				</div>
+			</div>`
+
+}
+
 document.querySelector("#nav").innerHTML = Nav();
 
 document.querySelector("#top").innerHTML = header();
@@ -196,6 +213,8 @@ document.querySelector(".footer").innerHTML = footer();
 document.querySelector(".TechStack").innerHTML = stack();
 
 document.querySelector(".work__boxes").innerHTML = Project();
+
+document.querySelector(".contribution").innerHTML = contributions();
 
 let sidemenu = document.getElementById("SideBar");
 

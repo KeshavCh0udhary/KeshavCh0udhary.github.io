@@ -46,14 +46,17 @@
 
 	<section class="TechStack"> </section>
 	
-	
-    <label class="row" for="Github" id="Git"><h2>My Contribution</h2></label>
-	<section id="Github" class="row">
-			
-		<div class="calendar" >
-			Loading the data just for you.
-		</div>
+	<section class="contribution" id="Git"> </section>
 
+	<section class="contact">
+	
+		<div class="row">
+			<h2>Statistics</h2>
+
+			<div class="work__boxes"> </div>
+
+		</div>
+		
 	</section>
 
 	<footer role="contentinfo" class="footer"> </footer>
@@ -72,7 +75,7 @@
 <script>
 
 GitHubCalendar(".calendar", "KeshavCh0udhary");
-  // GitHubCalendar(".calendar", "KeshavCh0udhary", { responsive: true });
+GitHubCalendar(".calendar", "KeshavCh0udhary", { responsive: true });
     GitHubCalendar("KeshavCh0udhary", "KeshavCh0udhary", {
        proxy (username) {
          return fetch(`https://your-proxy.com/github?user=${username}`);

@@ -623,12 +623,7 @@ body:not(.user-is-tabbing) a:focus {
 	width: fit-content;
 }
 
-#Github{
-	overflow: scroll;
-	color: var(--lightblue);
-	max-width: var(--container-max-width);
-	
-}
+
 
 .TechStack+.row{
 	max-height: 100px;
@@ -796,6 +791,14 @@ body:not(.user-is-tabbing) a:focus {
 		height: 60px;
 	}
 
+	.row .calendar>div+div {
+		margin: auto;
+	    display: flex;
+		flex-direction: column;
+		width: 100%;
+		font-size: larger;
+	}
+
 }
 
 
@@ -838,8 +841,22 @@ body:not(.user-is-tabbing) a:focus {
 		max-width: 100%;
 	}
 
-	html {
-		font-size: 12px;
+	.row .calendar>div+div {
+		font-size: larger;
+	}
+    
+
+	.row .calendar>div>div{
+		font-size: 15px
+	}
+
+	span.text-muted{
+        font-size: 12px;
+		color: #4aafda;
+	}
+	span.contrib-number{
+		color: var(--lightblue);
+		font-size: 15px;
 	}
 
 	:root {
@@ -982,7 +999,8 @@ span.contrib-number{
 	color: var(--lightblue);
 }
 
-.position-relative{
-	overflow: scroll;
-}
 
+.row .calendar {
+	width: 100%;
+	
+}
