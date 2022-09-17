@@ -960,7 +960,11 @@ form #btn {
 		flex-direction: column;
 		gap: 20px;
 	}
-
+    form{
+		margin-left: 0%;
+		width: 100%;
+		border: 1px solid red;
+	}
 }
 
 @media only screen and (max-width: 900px) {
