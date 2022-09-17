@@ -218,6 +218,39 @@ const contributions = () => {
 
 }
 
+const Stat = () => {
+	return `<div class="row">
+	<h2>Statistics</h2>
+		<div class="counter">
+			<!-- <h1 class="statistics"> STAT<span>ISTICS</span> </h1> -->
+			<div class="box">
+				<span>1200+</span>
+				<h5>hours of coding</h5>
+			</div>
+
+			<div class="box">
+				<span>500+</span>
+				<h5>hours of DSA</h5>
+			</div>
+
+			<div class="box">
+				<span>6</span>
+				<h5>months of training</h5>
+			</div>
+	
+			<div class="box">
+				<span>3</span>
+				<h5>projects completed</h5>
+			</div>
+	
+			<div class="box">
+				<span>6</span>
+				<h5>months of training on interpersonal skills</h5>
+			</div>
+		</div>
+</div>`
+}
+
 document.querySelector("#nav").innerHTML = Nav();
 
 document.querySelector("#top").innerHTML = header();
@@ -235,6 +268,8 @@ document.querySelector(".TechStack").innerHTML = stack();
 document.querySelector(".work__boxes").innerHTML = Project();
 
 document.querySelector(".contribution").innerHTML = contributions();
+
+document.querySelector(".Statistics").innerHTML = Stat();
 
 let sidemenu = document.getElementById("SideBar");
 
