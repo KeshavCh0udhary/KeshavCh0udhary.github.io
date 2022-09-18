@@ -394,7 +394,7 @@ form.addEventListener("submit", e => {
 
 			setTimeout(() => {
 				msg.innerHTML = "";
-			}, 2000);
+			}, 1000);
 
 			form.reset();
 			buttoncolor.style.backgroundColor = "transparent";
@@ -405,7 +405,7 @@ form.addEventListener("submit", e => {
 
 			setTimeout(() => {
 				msg.innerHTML = "";
-			}, 3000);
+			}, 1000);
 
 			form.reset();
 			buttoncolor.style.backgroundColor = "transparent";
