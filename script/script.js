@@ -162,11 +162,11 @@ const contact = () => {
        
 	        <h4>Leave Message</h4>
 	  
-			<form name="Send_Message_To_Keshav">
-				<input type="text" name="Name" placeholder="Your Name" required>
-				<input type="text" name="Email" placeholder="Email" required>
-				<input type="number" name="Phone" placeholder="Phone Number" required>
-				<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+			<form name="Send_Message_To_Keshav" class="form-group">
+			    <textarea id="0" name="Message" rows="6" placeholder="Your Message"></textarea>
+				<input id="1" type="text" name="Name" placeholder="Your Name" required>
+				<input id="2" type="text" name="Email" placeholder="Email" required>
+				<input id="3" type="number" name="Phone" placeholder="Phone Number" required>
 				<button id="btn" type="submit">Send message</button>
 		    </form>
 		    <span id="message"></span>
@@ -376,22 +376,53 @@ window.addEventListener("scroll", () => {
 });
 
 
+const counters = [{ id: 0 }, { id: 1 }, { id: 2 }, { id: 3 }, { id: "btn" },];
+
+let container = document.getElementsByClassName('form-group')[0];
+let inputs = container.children;
+
+for (let i = 0; i < inputs.length; i++) {
+	let input = inputs.item(i);
+	input.addEventListener('mouseenter', function (evt) {
+		let id = evt.target.id;
+		let counter = findElement(counters, id);
+		if (counter) {
+			document.getElementById(id).focus();
+		}
+	});
+}
+
+const findElement = (array, id) => {
+	for (let i = 0; i < array.length; i++) {
+		if (array[i].id == id)
+			return array[i];
+	}
+}
+
 const scriptURL = "https://script.google.com/macros/s/AKfycbysPMFg84Mj5juI-RtURRWnCDLeRdWHBKMGUWogm_gh0WfMOO6HCELIBSJKKAzHf7Nt-A/exec"
 
 const form = document.forms["Send_Message_To_Keshav"]
 
 const msg = document.getElementById("message");
+
+form.addEventListener("keypress", function (e) {
+	if (e.keyCode === "Enter") {
+		e.preventDefault();
+		document.getElementById("btn").click();
+	}
+});
+
 form.addEventListener("submit", e => {
 	e.preventDefault()
 	let buttoncolor = document.getElementById("btn");
-
-	msg.style.color ="pink";
+    buttoncolor.innerText="Sending....."
+	msg.style.color = "pink";
 
 	buttoncolor.style.backgroundColor = "lightblue";
 	fetch(scriptURL, { method: "POST", body: new FormData(form) })
 		.then(response => {
-			msg.innerHTML = "Message sent Successfully!"
-
+			msg.innerHTML = "Message sent Successfully!";
+            buttoncolor.innerText="Send message";
 			setTimeout(() => {
 				msg.innerHTML = "";
 			}, 1000);

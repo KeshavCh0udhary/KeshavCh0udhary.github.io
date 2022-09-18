@@ -696,6 +696,10 @@ form #btn {
 	color: white;
 }
 
+form #btn:hover{
+   background-color: var(--lightblue);
+}
+
 .SendMessage h4 {
 	text-align: center;
 }
