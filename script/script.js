@@ -394,7 +394,7 @@ form.addEventListener("submit", e => {
 
 			setTimeout(() => {
 				msg.innerHTML = "";
-			}, 3000);
+			}, 2000);
 
 			form.reset();
 			buttoncolor.style.backgroundColor = "transparent";
