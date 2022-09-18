@@ -441,5 +441,5 @@ form.addEventListener("submit", e => {
 			form.reset();
 			buttoncolor.style.backgroundColor = "transparent";
 		})
-})
+});
 
