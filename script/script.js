@@ -9,6 +9,11 @@ const Nav = () => {
 		<li class="nav__item">
 			<a href="#About" class="nav__link">About</a>
 		</li>
+
+		<li class="nav__item">
+		<a href="./img/Krishna Keshav Resume.pdf" download="Krishna Keshav Resume" title="Download Resume" class="nav__link">Resume</a>
+		</li>
+		
 		<li class="nav__item">
 			<a href="#Skills" class="nav__link">Skills</a>
 		</li>
@@ -211,9 +216,21 @@ const contributions = () => {
 
 	return `<div class="row" >
 				<h2>My Contribution</h2>
+
 				<div class="calendar" id="Github">
 					Loading the data just for you.
 				</div>
+
+				<div>
+					<br/>
+					<a  href="https://github.com/keshavch0udhary"><img alt="Krishna Keshav's Github Stats" src="https://github-readme-stats.vercel.app/api?username=keshavch0udhary&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=0D1117" /></a>
+					<a   href="https://github.com/keshavch0udhary"><img alt="Krishna Keshav's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=keshavch0udhary&langs_count=9&count_private=true&layout=compact&theme=react&hide_border=true&bg_color=0D1117" /></a>
+					<a href="https://github.com/KeshavCh0udhary"><img alt="Krishna Keshav Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=KeshavCh0udhary&bg_color=0D1117&color=5BCDEC&line=5BCDEC&point=FFFFFF&hide_border=true" /></a>
+
+				</div>
+
+				
+
 			</div>`
 
 }
