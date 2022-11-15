@@ -391,8 +391,15 @@ body:not(.user-is-tabbing) a:focus {
 .project {
 	display: flex;
 	align-items: center;
-
+    transition: 500ms linear;
 }
+
+.project:hover{
+	-webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+}
+
 
 .project__links {
 	display: flex;

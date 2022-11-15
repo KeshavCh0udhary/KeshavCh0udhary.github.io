@@ -147,6 +147,38 @@ const Project = () => {
 		<img src="./img/Mytheresa.png" class="work__image" alt="Project 1" />
 	</div>
 </div>
+
+<div class="project">
+	<div class="project__text">
+		<h3>soulFood</h3>
+		<p>
+		soulFood is a Self made online food Delivery App We have created the API for this in four days.
+		</p>
+		<h4><span>Tech Stack</span></h4>
+		<ul class="project__list">
+		<li>Java</li>
+		<li>Spring Data JPA</li>
+		<li>Hibernate</li>
+		<li>MySql</li>
+		
+		</ul>
+		<div class="project__links">
+			<a href="https://drive.google.com/file/d/1hYerHKDXECCkLeVVcQZFpn6-hPMrxg1j/view?usp=sharing" target="_blank" class="link__text"
+				title="Click">
+				Video ↗
+			</a>
+
+			<a href="https://github.com/vinitshahilverma/wide-eye-6503" title="Source Code"
+				target="_blank">
+				<i class="fab fa-github" title="Source Code"></i>
+			</a>
+		</div>
+	</div>
+	<div class="project__image-box">
+		<img src="https://user-images.githubusercontent.com/105925560/201616514-93a563e6-29ad-455b-829c-780b47ea1a0b.png" class="work__image" alt="Project 1" />
+	</div>
+</div>
+
 `
 }
 
