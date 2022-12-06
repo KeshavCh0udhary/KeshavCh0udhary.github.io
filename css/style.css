@@ -3,7 +3,9 @@
 	padding: 0;
 	box-sizing: inherit;
 }
-
+a{
+	text-decoration: none;
+}
 :root {
 	--font-size-small: 1.8rem;
 	--font-size-normal: 2.2rem;

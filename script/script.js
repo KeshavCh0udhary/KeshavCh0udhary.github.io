@@ -1,7 +1,7 @@
 const Nav = () => {
 	return `<nav class="nav" role="navigation">
 	  
-	<h3 class="logo" id="change">Portfo<span>lio</span></h3>
+	<a href="#top"><h3 class="logo" id="change">Portfo<span>lio</span></h3></a>
 	<ul class="nav__items" id="SideBar">
 		<li class="nav__item">
 			<a href="#top" class="nav__link">Home</a>
@@ -447,10 +447,6 @@ const findElement = (array, id) => {
 			return array[i];
 	}
 }
-
-let top = document.getElementById("change").addEventListner("click",()=>{
-	window.location.href="#top";
-});
 
 const scriptURL = "https://script.google.com/macros/s/AKfycbysPMFg84Mj5juI-RtURRWnCDLeRdWHBKMGUWogm_gh0WfMOO6HCELIBSJKKAzHf7Nt-A/exec"
 
