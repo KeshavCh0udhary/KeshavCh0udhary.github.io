@@ -11,7 +11,7 @@ const Nav = () => {
 		</li>
 
 		<li class="nav__item">
-		<a href="./img/Krishna Keshav Resume.pdf" download="Krishna Keshav Resume" title="Download Resume" class="nav__link">Resume</a>
+		<a href="https://drive.google.com/uc?export=download&id=1X993G4KNPlVUhdNaDCBToXCt3_NUzH78" title="Download Resume" class="nav__link" id="resume_button_1">Resume</a>
 		</li>
 		
 		<li class="nav__item">
@@ -53,7 +53,7 @@ const about = () => {
 	
 		<div class="about__text">
 		   <p>Aspiring Full Stack Developer with a specialization in Java, Spring Boot, SQL, Git/Github, HTML, CSS, Javascript, Object-oriented, design Self-motivated and curious, with a keen interest in building user-centric products. Looking forward to honing my skills in a challenging work environment.</p>
-			<a href="./img/Krishna Keshav Resume.pdf" download="Krishna Keshav Resume" title="Download Resume" class="btn">My Resume</a>
+			<a href="https://drive.google.com/uc?export=download&id=1X993G4KNPlVUhdNaDCBToXCt3_NUzH78" title="Download Resume" class="btn" id="resume_button_2">My Resume</a>
 		</div>
 		<div class="about__photo-container">
 	
@@ -424,6 +424,19 @@ window.addEventListener("scroll", () => {
 
 });
 
+//resume downloadable buttons
+
+document.getElementById("resume_button_1").addEventListener("click", () => {
+
+	window.open("https://drive.google.com/file/d/1X993G4KNPlVUhdNaDCBToXCt3_NUzH78/view?usp=sharing", "_blank");
+
+})
+
+document.getElementById("resume_button_2").addEventListener("click", () => {
+
+	window.open("https://drive.google.com/file/d/1X993G4KNPlVUhdNaDCBToXCt3_NUzH78/view?usp=sharing", "_blank");
+
+})
 
 const counters = [{ id: 0 }, { id: 1 }, { id: 2 }, { id: 3 }, { id: "btn" },];
 
@@ -464,14 +477,14 @@ form.addEventListener("keypress", function (e) {
 form.addEventListener("submit", e => {
 	e.preventDefault()
 	let buttoncolor = document.getElementById("btn");
-    buttoncolor.innerText="Sending....."
+	buttoncolor.innerText = "Sending....."
 	msg.style.color = "pink";
 
 	buttoncolor.style.backgroundColor = "lightblue";
 	fetch(scriptURL, { method: "POST", body: new FormData(form) })
 		.then(response => {
 			msg.innerHTML = "Message sent Successfully!";
-            buttoncolor.innerText="Send message";
+			buttoncolor.innerText = "Send message";
 			setTimeout(() => {
 				msg.innerHTML = "";
 			}, 1000);
