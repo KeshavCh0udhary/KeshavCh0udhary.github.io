@@ -11,7 +11,7 @@ const Nav = () => {
 		</li>
 
 		<li class="nav__item">
-		<a href="https://drive.google.com/uc?export=download&id=1X993G4KNPlVUhdNaDCBToXCt3_NUzH78" title="Download Resume" class="nav__link" id="resume_button_1">Resume</a>
+		<a href="https://drive.google.com/uc?export=download&id=1vg8DZtDNgcc0W09V5fQXLjUpeOUFDUrz" title="Download Resume" class="nav__link" id="resume_button_1">Resume</a>
 		</li>
 		
 		<li class="nav__item">
@@ -53,7 +53,7 @@ const about = () => {
 	
 		<div class="about__text">
 		   <p>Aspiring Full Stack Developer with a specialization in Java, Spring Boot, SQL, Git/Github, HTML, CSS, Javascript, Object-oriented, design Self-motivated and curious, with a keen interest in building user-centric products. Looking forward to honing my skills in a challenging work environment.</p>
-			<a href="https://drive.google.com/uc?export=download&id=1X993G4KNPlVUhdNaDCBToXCt3_NUzH78" title="Download Resume" class="btn" id="resume_button_2">My Resume</a>
+			<a href="https://drive.google.com/uc?export=download&id=1vg8DZtDNgcc0W09V5fQXLjUpeOUFDUrz" title="Download Resume" class="btn" id="resume_button_2">My Resume</a>
 		</div>
 		<div class="about__photo-container">
 	
@@ -132,7 +132,7 @@ const Project = () => {
 			<li>JavaScript</li>
 		</ul>
 		<div class="project__links">
-			<a href="https://resplendent-elf-e32d23.netlify.app/" target="_blank" class="link__text"
+			<a href="https://inquisitive-snickerdoodle-f9c469.netlify.app/" target="_blank" class="link__text"
 				title="Click">
 				Live ↗
 			</a>
@@ -428,13 +428,13 @@ window.addEventListener("scroll", () => {
 
 document.getElementById("resume_button_1").addEventListener("click", () => {
 
-	window.open("https://drive.google.com/file/d/1X993G4KNPlVUhdNaDCBToXCt3_NUzH78/view?usp=sharing", "_blank");
+	window.open("https://drive.google.com/file/d/1vg8DZtDNgcc0W09V5fQXLjUpeOUFDUrz/view?usp=sharing", "_blank");
 
 })
 
 document.getElementById("resume_button_2").addEventListener("click", () => {
 
-	window.open("https://drive.google.com/file/d/1X993G4KNPlVUhdNaDCBToXCt3_NUzH78/view?usp=sharing", "_blank");
+	window.open("https://drive.google.com/file/d/1vg8DZtDNgcc0W09V5fQXLjUpeOUFDUrz/view?usp=sharing", "_blank");
 
 })
 
