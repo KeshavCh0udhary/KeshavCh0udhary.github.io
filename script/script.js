@@ -132,7 +132,7 @@ const Project = () => {
 			<li>JavaScript</li>
 		</ul>
 		<div class="project__links">
-			<a href="https://inquisitive-snickerdoodle-f9c469.netlify.app/" target="_blank" class="link__text"
+			<a href="https://bucolic-cannoli-66d4c2.netlify.app/" target="_blank" class="link__text"
 				title="Click">
 				Live ↗
 			</a>
