@@ -88,7 +88,37 @@ const skills = () => {
 }
 
 const Project = () => {
-	return `<div class="project">
+	return `
+	<div class="project">
+	<div class="project__text">
+		<h3>Myntra</h3>
+		<p>
+		Myntra is an e-commerce website where people can buy from wide range of products and has an interactive UI. I have cloned
+			This website in seven Days.
+		</p>
+		<h4><span>Tech Stack</span></h4>
+		<ul class="project__list">
+			<li>Javascript</li>
+			<li>HTML</li>
+			<li>CSS</li>
+		</ul>
+
+		<div class="project__links">
+			<a href="https://myntraclonebykeshav.netlify.app/" class="link__text"
+			target="_blank" title="Click">
+				Live ↗
+			</a>
+			<a href="https://github.com/KeshavCh0udhary/myntyra-clone" target="_blank">
+				<i class="fab fa-github" title="Source Code"></i>
+			</a>
+
+		</div>
+	</div>
+	<div class="project__image-box">
+		<img src="./img/myntra.png" class="work__image" alt="Project 1" />
+	</div>
+</div>
+	<div class="project">
 	<div class="project__text">
 		<h3>Hindustan Times</h3>
 		<p>
